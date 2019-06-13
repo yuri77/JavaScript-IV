@@ -74,6 +74,15 @@ const naruto = new Student({
   favSubjects: ["JavaScript", "HTML", "CSS"]
 });
 
+const gaga = new Student({
+  name: "gaga",
+  location: "watermountain",
+  age: 30,
+  previousBackground: "doctor",
+  className: "Web21",
+  favSubjects: ["R", "SQL", "Python"]
+});
+
 naruto.speak();
 naruto.listsSubjects();
 naruto.PRAssiggnment("Python");
@@ -90,7 +99,7 @@ const fred = new Instructor({
 
 fred.speak();
 fred.demo("JavaScript");
-fred.grade(fred, "python");
+fred.grade(gaga, "python");
 
 const Konan = new ProjectManager({
   name: "Konan",
@@ -103,5 +112,8 @@ const Konan = new ProjectManager({
   favInstructor: "Jojo"
 });
 
+Konan.speak();
+Konan.demo("SQL");
+Konan.grade(naruto, "SQL");
 Konan.standUp("Web21_ah");
 Konan.debugsCode(naruto, "SQL");
